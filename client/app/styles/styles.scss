@@ -1,0 +1,491 @@
+@charset "UTF-8";
+@import 'vendor/normalize';
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: green;
+
+body {
+  font: 100% $font-stack;
+}
+
+.azco-header {
+  background-color: #ff5722 !important;
+  box-shadow: 0px 4px 9px #999;
+}
+
+.navbar-brand {
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+  color: white !important;
+  margin-right: 70px;
+}
+
+.container-fluid {
+  padding-top: 50px !important;
+  width: 85% !important;
+}
+
+.btn {
+  box-shadow: 1px 2px 3px #666 !important; 
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.nav-link {
+  font-size: 18px !important;
+}
+
+.form-control:focus {
+  border-color: #ced4da !important;
+  box-shadow: none;
+}
+
+.required {
+  border: 1px solid red !important;
+}
+
+.pw-required {
+  border: 1px solid red !important;
+  border-right: 0 !important;
+}
+
+.pw-required ~ .input-group-addon-right {
+  border: 1px solid red !important;
+  border-left: 0 !important;
+}
+
+.form-control:focus ~ .input-group-addon-right {
+  border: 1px solid #ced4da !important;
+  border-left: 0px !important;
+}
+
+// this is user style
+
+.user-table {
+  text-align: center;
+  font-size: 18px;
+}
+
+.user-table {
+  padding: 5px !important;
+  margin-top: 30px !important;
+  margin-bottom: 20px !important;
+  width: 97%;
+  margin-left: 20px;
+}
+
+.user-table tr:nth-of-type(even) {
+  background-color: #fbfbfb !important;
+}
+
+.user-table tbody tr:hover {
+  background-color: #fbfbfb !important;
+}
+
+.user-table .username {
+  width: 30%;
+  padding: 13px 0px;
+}
+
+.user-table .password {
+  width: 30%;
+  padding: 13px 0px;
+}
+
+.user-table .action {
+  padding: 5px;
+}
+
+.user-table .action {
+  width: 20%;
+}
+
+.create-new-user {
+  margin-bottom: 20px;
+  float: right;
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(128, 128, 128, 0.4);
+}
+
+.input-group-addon {
+  background: #999;
+  border: 1px solid #999;
+  width: 8%;
+  text-align: center;
+  padding-top: 7px;
+  padding-left: 1px;
+}
+
+#password {
+  border-right: 0;
+}
+
+.input-group-addon-right {
+  border: 1px solid #ced4da;
+  border-left: 0;
+  text-align: center;
+  padding-top: 7px; 
+  padding-right: 10px;
+}
+
+.input-group-addon-right:hover {
+  cursor: pointer;
+}
+
+.actionRemove {
+  display: none;
+}
+
+.create-new-user {
+  margin-right: 15px; 
+}
+
+.printBtn {
+  margin-left: 20px;
+}
+
+.forgotLink {
+  margin-left: 10px;
+}
+
+.navbar-brand svg {
+  margin-top: -7px;
+}
+
+.nav-logout {
+  float: right;
+}
+
+.logout:hover {
+  cursor: pointer;
+}
+
+.well {
+  border: 2px solid #ddd;
+  padding: 10px;
+  box-shadow: 0px 1px 4px #ddd;
+  min-height: 500px;
+}
+
+.progress {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 2px 3px #bbb;
+}
+
+.filters {
+  background-color: #e9ecef;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px #bbb;
+}
+
+.step {
+  height: 40px;
+  margin-top: 12px;
+  margin: 12px 10px 0px 10px;
+  font-size: 14px;
+}
+
+.cursor-active {
+  color: #ff5722;
+  font-weight: bold;
+}
+
+.cursor-active:hover {
+  cursor: pointer;
+}
+
+.cursor-passive:hover {
+  cursor: no-drop;
+}
+
+.productType {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productList {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.products {
+  padding: 10px 15px 9px 15px;
+  background-color: #ff5722;
+  box-shadow: 1px 2px 3px #666;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.products:hover {
+  cursor:pointer
+}
+
+.type {
+  width: 45%;
+}
+
+.filters {
+  padding: 6px 0px 0px 6px;
+}
+
+.filters button {
+  margin-right: 10px;
+}
+
+.inout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.incoming {
+  width:48% !important;
+}
+
+.outgoing {
+  width: 48% !important;
+}
+
+.cnt {
+  width: 100%;
+  padding: 5% 15% 0px 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p_cnt {
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  width: 40%;
+}
+
+.cnt_save {
+  margin: 0 auto;
+}
+
+.currentStock {
+  width: 100%;
+  text-align: center;
+}
+
+.spinning {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 200px;
+  left: 46%;
+}
+
+.pagination-container {
+  padding: 20px;
+}
+
+.pagination {
+  float: right;
+}
+
+.pagination li {
+  border-top: 1px solid #007bff;
+  border-bottom: 1px solid #007bff;
+  border-right: 1px solid #007bff;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 5px;
+  float: right;
+}
+
+.pagination li:hover {
+  cursor: pointer;
+}
+
+.pagination li.active {
+  font-weight: bold;
+}
+
+.pagination li:first-child {
+  border-left: 1px solid #007bff;
+}
+
+.pagination li a:hover {
+  text-decoration: none;
+}
+
+.active-header-link {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px #999;
+}
+
+.search-container {
+  display: inline-block;
+  float: right;
+}
+
+.search-container .btn {
+  margin-top: -8px !important;
+}
+
+.search-input {
+  display: inline-block;
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+.search-input input {
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid #999;
+  border-radius: 5px;
+}
+
+.cabinetStock ~ .action {
+  width: 22%;
+}
+
+.alert-message {
+  color: #f00;
+  margin-left: 15px;
+}
+
+.permit-message {
+  text-align: center;
+}
+
+.inform-message {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  color: #333;
+}
+
+// this is for notification
+.notification-container {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999;
+  width: 320px;
+  padding: 0px 15px;
+  max-height: calc(100% - 30px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.notification {
+  box-sizing: border-box;
+  padding: 15px 15px 15px 58px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #ccc;
+  box-shadow: 0 0 12px #999;
+  cursor: pointer;
+  font-size: 1em;
+  line-height: 1.2em;
+  position: relative;
+  opacity: 0.9;
+  margin-top: 15px;
+}
+
+.notification .title {
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.notification:hover, .notification:focus {
+  opacity: 1;
+}
+
+.notification-enter {
+  visibility: hidden;
+  transform: translate3d(100%, 0, 0);
+}
+
+.notification-enter.notification-enter-active {
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.4s;
+}
+
+.notification-leave {
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+}
+
+.notification-leave.notification-leave-active {
+  visibility: hidden;
+  transform: translate3d(100%, 0, 0);
+  transition: all 0.4s;
+}
+
+.notification:before {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -14px;
+  display: block;
+  font-family: 'Notification';
+  width: 28px;
+  height: 28px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.notification-info {
+  background-color: #2f96b4;
+}
+
+.notification-info:before {
+  content: "";
+}
+
+.notification-success {
+  background-color: #51a351;
+}
+
+.notification-success:before {
+  content: "";
+}
+
+.notification-warning {
+  background-color: #f89406;
+}
+
+.notification-warning:before {
+  content: "";
+}
+
+.notification-error {
+  background-color: #bd362f;
+}
+
+.notification-error:before {
+  content: "";
+}
